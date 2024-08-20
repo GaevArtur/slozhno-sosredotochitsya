@@ -8,7 +8,8 @@
 
   
 .page.theme_light {
-  background-image: url(/Users/arturik/Desktop/ProjectPracticum/slozhno-sosredotochitsya/images/cover-image-light.png);
+  
+  background-image: url("../images/cover-image-light.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;

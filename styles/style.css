@@ -1,6 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page { 
-  background-image: url(/Users/arturik/Desktop/ProjectPracticum/slozhno-sosredotochitsya/images/cover-image-dark.png);
+  background-image: url("..//images/cover-image-dark.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -313,7 +313,7 @@ text-align: center;
   }
 }
 
-.text__card1{
+.text__card-first{
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -322,7 +322,7 @@ text-align: center;
 }
 
 @media(375px < width <=768px){
-  .text__card1{
+  .text__card-first{
     display: grid;
     grid-template-columns: 1fr 2fr ;
     gap: 20px;
@@ -330,13 +330,13 @@ text-align: center;
     margin-right: 20px;
   }
 
-  .text__card1 .group__title{
+  .text__card-first .group__title{
     grid-column-start: 2;
   }
 }
 
 @media(768px < width <=1024px){
-  .text__card1{
+  .text__card-first{
     display: grid;
     grid-template-columns: 1fr 2fr ;
     gap: 11px;
@@ -345,7 +345,7 @@ text-align: center;
   }
 }
 
-.text__card2{
+.text__card-second{
   display: flex;
   flex-direction: column;
   row-gap: 20px;
@@ -354,7 +354,7 @@ text-align: center;
 }
 
 @media(375px < width <=768px){
-  .text__card2{
+  .text__card-second{
     display: grid;
     grid-template-columns: 1fr 2fr ;
     grid-template-rows: repeat(2, auto);
@@ -363,14 +363,14 @@ text-align: center;
     margin-right: 20px;
   }
 
-  .text__card2 .group__title{
+  .text__card-second .group__title{
     grid-row-start: 2;
     grid-column-start: span 3;
   }
 }
 
 @media(768px < width <=1024px){
-  .text__card2{
+  .text__card-second{
     display: grid;
     grid-template-columns: 1fr 2fr ;
     grid-template-rows: repeat(2, auto);
@@ -379,7 +379,7 @@ text-align: center;
     margin-right: 20px;
   }
 
-  .text__card2 .group__title{
+  .text__card-second .group__title{
     grid-row-start: 2;
     grid-column-start: span 3;
     flex-direction: row;
@@ -412,7 +412,7 @@ text-align: center;
   text-align: left;
 }
 
-.content__sub4{
+.content__item{
   font-family: var(--text-font);
   font-size: 18px;
   font-weight: 400;
