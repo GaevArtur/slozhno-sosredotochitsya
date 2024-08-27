@@ -391,6 +391,10 @@
     column-gap: 20px;
     row-gap: 0;
   }
+
+  .text__card-album .group__title .group__sub{
+    width: 315px;
+  }
 }
 
 .content__title {
@@ -428,7 +432,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  min-width: 315px;
+  /*min-width: 315px;*/
 }
 
 .content__text {
