@@ -6,22 +6,19 @@
 
 :root .theme_light {
   --bg-page-color: rgba(255, 232, 244, 1);
-  background-color: var(--bg-page-color);
   background-image: url("../images/cover-image-light.png");
   --text-font: "IBM Plex mono";
   --accent-color: rgba(53, 52, 48, 1);
   --title-color: rgba(255, 194, 230, 1);
   --title-shadow-color: rgba(255, 141, 203, 1);
   --card-text-color: rgba(53, 52, 48, 1);
-  --button-hover-color: rgba(53, 52, 48, 0.4);
+  --button-hover-color: rgba(53, 52, 48, 1);
   --button-active-color: rgba(53, 52, 48, 1);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --bg-page-color: rgba(255, 232, 244, 1);
-    background-color: var(--bg-page-color);
-    background-image: url("../images/cover-image-light.png");
     --text-font: "IBM Plex mono";
     --accent-color: rgba(53, 52, 48, 1);
     --title-color: rgba(255, 194, 230, 1);
@@ -30,9 +27,14 @@
     --button-hover-color: rgba(53, 52, 48, 0.4);
     --button-active-color: rgba(53, 52, 48, 1);
   }
+  :root .page{
+    background-image: url("../images/cover-image-light.png");
+  }
+
   .header__lamp {
     visibility: hidden;
   }
+
 }
 
 .theme_light .header__lamp {

@@ -4,7 +4,7 @@
 */
 
 :root {
-  --bg-page-color: rgba(0, 0, 50, 1);
+  --bg-page-color: rgba(0, 0, 40, 1);
   --accent-color: #ff0070;
   --text-font: "IBM Plex mono";
   --title-color: rgba(219, 0, 255, 1);
@@ -14,7 +14,7 @@
   --card-text-color: rgba(241, 178, 206, 1);
 }
 
-:root .page {
+/* :root .page{
   background-image: url("../images/cover-image-dark.png");
 }
 
@@ -22,4 +22,4 @@
   :root .page {
     background-image: url("../images/cover-image-light.png");
   }
-}
+} */
