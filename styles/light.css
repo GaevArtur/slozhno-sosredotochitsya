@@ -12,7 +12,7 @@
   --title-color: rgba(255, 194, 230, 1);
   --title-shadow-color: rgba(255, 141, 203, 1);
   --card-text-color: rgba(53, 52, 48, 1);
-  --button-hover-color: rgba(53, 52, 48, 1);
+  --button-hover-color: rgba(53, 52, 48, 0.4);
   --button-active-color: rgba(53, 52, 48, 1);
 }
 

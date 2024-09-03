@@ -19,14 +19,14 @@
   row-gap: 40px;
 }
 
-@media (375px < width <= 768px) {
+@media (768px <= width < 1024px) {
   .header {
     min-height: 1024px;
     row-gap: 146px;
   }
 }
 
-@media (768px < width <= 1024px) {
+@media (1024px <= width) {
   .header {
     grid-template-rows: repeat(3, min-content);
     min-height: 768px;
@@ -44,14 +44,14 @@
   margin-top: 10px;
   text-align: right;
 }
-@media (375px< width <= 768px) {
+@media (768px<= width < 1024px) {
   .header__lamp {
     margin-right: 48px;
     margin-top: 20px;
   }
 }
 
-@media (768px< width <= 1024px) {
+@media (1024px<= width) {
   .header__lamp {
     margin-right: 48px;
     margin-top: 20px;
@@ -74,14 +74,14 @@
   right: 19px;
 }
 
-@media (375px < width <= 768px) {
+@media (768px <= width < 1024px) {
   .header__lamp::after {
     top: 28px;
     right: 29px;
   }
 }
 
-@media (768px < width <= 1024px) {
+@media (1024px <= width) {
   .header__lamp::after {
     top: 28px;
     right: 29px;
@@ -105,14 +105,14 @@
   top: 10px;
 }
 
-@media (375px< width <=768px) {
+@media (768px <= width < 1024px) {
   .decorated-zone::before {
     right: 20px;
     top: 20px;
   }
 }
 
-@media (768px< width <=1024px) {
+@media (1024px <= width) {
   .decorated-zone::before {
     right: 20px;
     top: 20px;
@@ -132,14 +132,14 @@
   bottom: 10px;
 }
 
-@media (375px< width <=768px) {
+@media (768px <= width < 1024px) {
   .decorated-zone::after {
     left: 20px;
     bottom: 20px;
   }
 }
 
-@media (768px< width <=1024px) {
+@media (1024px <= width) {
   .decorated-zone::after {
     left: 20px;
     bottom: 20px;
@@ -155,14 +155,14 @@
   justify-self: end;
 }
 
-@media (375px< width <=768px) {
+@media (768px <= width < 1024px) {
   .header__theme-menu {
     margin-right: 20px;
     margin-top: 2px;
   }
 }
 
-@media (768px< width <=1024px) {
+@media (1024px <= width) {
   .header__theme-menu {
     grid-row-start: 1;
     grid-column-start: 1;
@@ -182,7 +182,7 @@
   flex-direction: column;
 }
 
-@media (768px< width <=1024px) {
+@media (1024px <= width) {
   .header__theme-menu-list {
     flex-direction: row;
     row-gap: 0;
@@ -241,7 +241,7 @@
   margin-top: 26px;
 }
 
-@media (375px< width <=768px) {
+@media (768px <= width < 1024px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-left: 0;
@@ -249,7 +249,7 @@
   }
 }
 
-@media (768px< width <=1024px) {
+@media (1024px <= width) {
   .header__title {
     grid-row-start: 2;
     margin-left: 0;
@@ -270,7 +270,7 @@
   margin-top: 14px;
 }
 
-@media (375px< width <=768px) {
+@media (768px <= width < 1024px) {
   .header__content {
     grid-column-start: 2;
     margin-right: 20px;
@@ -279,7 +279,7 @@
   }
 }
 
-@media (768px< width <=1024px) {
+@media (1024px <= width) {
   .header__content {
     grid-column-start: 2;
     grid-row-start: 3;
@@ -302,7 +302,7 @@
   padding-bottom: 40px;
 }
 
-@media (375px < width <=768px) {
+@media (768px <= width < 1024px) {
   .main__content {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -310,7 +310,7 @@
   }
 }
 
-@media (768px < width <=1024px) {
+@media (1024px <= width) {
   .main__content {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -326,7 +326,7 @@
   margin-right: 10px;
 }
 
-@media (375px < width <=768px) {
+@media (768px <= width < 1024px) {
   .text__card-portrait {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -340,7 +340,7 @@
   }
 }
 
-@media (768px < width <=1024px) {
+@media (1024px <= width ) {
   .text__card-portrait {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -358,7 +358,7 @@
   margin-right: 10px;
 }
 
-@media (375px < width <=768px) {
+@media (768px <= width < 1024px) {
   .text__card-album {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -374,7 +374,7 @@
   }
 }
 
-@media (768px < width <=1024px) {
+@media (1024px <= width ) {
   .text__card-album {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -473,7 +473,7 @@
   margin-right: 10px;
 }
 
-@media (375px<width<=1024px) {
+@media (768px<= width) {
   .image__card {
     grid-template-rows: repeat(5, auto);
     grid-template-areas:
@@ -514,6 +514,7 @@
 .image__icecream {
   grid-area: icecream;
   height: 100%;
+  width: 100%;
 }
 
 .image__tape {
@@ -522,10 +523,12 @@
 }
 
 .image__books {
+  width: 100%;
   grid-area: books;
 }
 
 .image__street {
+  width: 100%;
   grid-area: street;
 }
 
@@ -543,13 +546,13 @@
   min-height: 668px;
 }
 
-@media (375px<width<=768px) {
+@media (768px <= width < 1024px) {
   .footer {
     min-height: 1024px;
   }
 }
 
-@media (768px<width<=1024px) {
+@media (1024px <= width) {
   .footer {
     min-height: 768px;
   }
@@ -565,14 +568,14 @@
   text-shadow: 2px 2px 0 var(--title-shadow-color);
 }
 
-@media (375px<width<=768px) {
+@media (768px <= width < 1024px) {
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 99px;
   }
 }
 
-@media (768px<width<=1024px) {
+@media (1024px <= width) {
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 129.53px;
